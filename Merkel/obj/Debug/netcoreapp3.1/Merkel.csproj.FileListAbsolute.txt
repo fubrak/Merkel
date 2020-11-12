@@ -1,0 +1,13 @@
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.exe
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.deps.json
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.runtimeconfig.json
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.runtimeconfig.dev.json
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.dll
+C:\Users\yoni\source\repos\Merkel\Merkel\bin\Debug\netcoreapp3.1\Merkel.pdb
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.csprojAssemblyReference.cache
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.AssemblyInfoInputs.cache
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.AssemblyInfo.cs
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.csproj.CoreCompileInputs.cache
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.dll
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.pdb
+C:\Users\yoni\source\repos\Merkel\Merkel\obj\Debug\netcoreapp3.1\Merkel.genruntimeconfig.cache
