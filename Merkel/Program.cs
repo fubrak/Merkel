@@ -5,7 +5,7 @@ namespace Merkel
 {
     class Program
     {
-        private static readonly int sizeOfTable = 10000000;
+        private static readonly int sizeOfTable = 10000;
 
         static void Main(string[] args)
         {
@@ -13,6 +13,8 @@ namespace Merkel
             NamesTable myTable2 = new NamesTable();
 
             NamesEntry randomEntry;
+
+            Console.WriteLine("Adding random entries...");
 
             for (int i = 0; i < sizeOfTable; i++)
             {
@@ -22,8 +24,12 @@ namespace Merkel
                 myTable2.AddNewEntry(randomEntry);
             }
 
-            Console.WriteLine("calculating");
-            Console.WriteLine(myTable1.myHashSet.SetEquals(myTable2.myHashSet));
+
+
+            // Uncomment the line below to get false results
+            // myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
+
+            myTable1.CompareTablesAndPrintResults(myTable2);
 
             Console.ReadLine();
         }
