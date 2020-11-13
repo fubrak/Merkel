@@ -5,7 +5,7 @@ namespace Merkel
 {
     class Program
     {
-        private static readonly int sizeOfTable = 10000;
+        private static readonly int sizeOfTable = 10000000;
 
         static void Main(string[] args)
         {
@@ -23,8 +23,6 @@ namespace Merkel
                 myTable1.AddNewEntry(randomEntry);
                 myTable2.AddNewEntry(randomEntry);
             }
-
-
 
             // Uncomment the line below to get false results
             // myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
