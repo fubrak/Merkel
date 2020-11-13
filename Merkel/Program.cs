@@ -1,9 +1,8 @@
 ﻿using System;
 
-
 namespace Merkel
 {
-    class Program
+    public class Program
     {
         private static readonly int sizeOfTable = 10000000;
 
@@ -25,7 +24,7 @@ namespace Merkel
             }
 
             // Uncomment the line below to get false results
-            // myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
+             myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
 
             myTable1.CompareTablesAndPrintResults(myTable2);
 
@@ -37,6 +36,7 @@ namespace Merkel
         /// returns random values for NamesEntry
         /// </summary>
         /// <returns></returns>
+                 
         public static NamesEntry GetRandomEntry()
         {
             return new NamesEntry(
