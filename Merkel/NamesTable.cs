@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Merkel
 {
     class NamesTable
-    {        
-        public HashSet<NamesEntry> myHashSet = new HashSet<NamesEntry>();
+    {                
+        public SortedSet<NamesEntry> mySortedSet = new SortedSet<NamesEntry>(new NamesEntryComparer());
 
         public void AddNewEntry(NamesEntry entry)
         {            
-            myHashSet.Add(entry);            
+            mySortedSet.Add(entry);            
         }
 
         /// <summary>
@@ -21,7 +20,7 @@ namespace Merkel
         public bool CompareTablesAndPrintResults(NamesTable tableNumberTwo)
         {
             // Checks whether sets are equal
-            if (myHashSet.SetEquals(tableNumberTwo.myHashSet))
+            if (mySortedSet.SetEquals(tableNumberTwo.mySortedSet))
             {
                 Console.WriteLine("The tables are equal");
                 return true;
@@ -30,14 +29,14 @@ namespace Merkel
             Console.WriteLine("Tables are not equal, these are the values that do not appear in both of them:");
 
             // This only leaves the "unique" entries in the hash - entries that are not in both hash sets.
-            tableNumberTwo.myHashSet.SymmetricExceptWith(this.myHashSet);
+            tableNumberTwo.mySortedSet.SymmetricExceptWith(this.mySortedSet);
 
-            PrintHashSet(tableNumberTwo.myHashSet);
+            PrintHashSet(tableNumberTwo.mySortedSet);
 
             return false;           
         }
 
-        public void PrintHashSet (HashSet<NamesEntry> set)
+        public void PrintHashSet (SortedSet<NamesEntry> set)
         {
             foreach (NamesEntry entry in set)
             {
