@@ -14,7 +14,7 @@ namespace Merkel
         }
 
         /// <summary>
-        /// This removes value after value from the hash set and check if item removed successfully
+        /// Checks if two NamesTable are equals, if not, prints the values that do not appear in both of them
         /// </summary>
         /// <param name="tableNumberTwo">a table of entries</param>
         /// <returns></returns>
