@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1RQc9mD+ReNh92LTDc9aHocGJ1irSsB/mBjx8ooq4w1hP0kJZ/XJeCo55ub3wYsQyIxYYqu4yZko9v/aA1bQBw==",
+  "dgSpecHash": "iX0xE8KVPlQv+HIIFU3rdPoYjmkAceJIuVBmXVmQaJF/w9ot0mlu9xDLnenFPAPC+j2iRx8CUPYR4k31FJXKFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkel.csproj",
+  "projectFilePath": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yoni\\.nuget\\packages\\merkletools\\1.0.3\\merkletools.1.0.3.nupkg.sha512"
   ],

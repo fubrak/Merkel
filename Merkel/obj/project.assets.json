@@ -39,9 +39,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkel.csproj",
-      "projectName": "Merkel",
-      "projectPath": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkel.csproj",
+      "projectUniqueName": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkle.csproj",
+      "projectName": "Merkle",
+      "projectPath": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\Merkle.csproj",
       "packagesPath": "C:\\Users\\yoni\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\yoni\\source\\repos\\Merkel\\Merkel\\obj\\",
       "projectStyle": "PackageReference",
