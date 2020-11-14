@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Linq;
 
 namespace Merkel
 {
     public class Program
     {
-        private static readonly int sizeOfTable = 10000000;
+        private static readonly int sizeOfTable = 10000;
+        private static Random random = new Random();
 
         static void Main(string[] args)
         {
@@ -24,11 +26,11 @@ namespace Merkel
             }
 
             // Uncomment the line below to get false results
-             myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
+            myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
 
             myTable1.CompareTablesAndPrintResults(myTable2);
 
-            Console.ReadLine();
+            Console.WriteLine("done");
         }
 
 
@@ -40,10 +42,18 @@ namespace Merkel
         public static NamesEntry GetRandomEntry()
         {
             return new NamesEntry(
-                new Random(10000).Next().ToString(),
-                new Random(10000).Next().ToString(),
-                new Random(10000).Next()
+                RandomString(8),
+                RandomString(8),
+                new Random().Next(1000000000)
                 );
+        }
+
+
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }
