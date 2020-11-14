@@ -5,7 +5,7 @@ namespace Merkel
 {
     public class Program
     {
-        private static readonly int sizeOfTable = 10000;
+        private static readonly int sizeOfTable = 100000;
         private static Random random = new Random();
 
         static void Main(string[] args)
@@ -25,10 +25,11 @@ namespace Merkel
                 myTable2.AddNewEntry(randomEntry);
             }
 
-            // Uncomment the line below to get false results
+            //Uncomment the line below to get false results
             //myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
 
             myTable1.CompareTablesAndPrintResults(myTable2);
+            myTable2.CompareTablesAndPrintResults(myTable1);
 
             Console.WriteLine("done");
         }

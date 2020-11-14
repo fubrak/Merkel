@@ -44,7 +44,7 @@ namespace Merkel
             ArrayList currProofStr, myProofStr;
 
             while (true)
-            {
+            {                
                 try
                 {
                     // If GetProof throws exception, value is not in table
@@ -63,6 +63,8 @@ namespace Merkel
                 {
                     break;
                 }
+
+                //Console.WriteLine("Checking index number " + currIndex);
 
                 // Getting proof for my table
                 myProof = tableHashTree.GetProof(ToBytes(tableOfEntries[currIndex].ToString()));
