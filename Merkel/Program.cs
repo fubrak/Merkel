@@ -26,7 +26,7 @@ namespace Merkel
             }
 
             // Uncomment the line below to get false results
-            myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
+            //myTable1.AddNewEntry(new NamesEntry("single", "value", 666));
 
             myTable1.CompareTablesAndPrintResults(myTable2);
 
